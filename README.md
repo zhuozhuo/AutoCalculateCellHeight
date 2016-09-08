@@ -1,5 +1,10 @@
 **UITableViewCell 高度自适应一直是我们做动态Cell高度时遇到的最烦躁的问题,今天主要和大家分享下我在使用`systemLayoutSizeFittingSize`系统自带方法计算高度的一些心得!**
 
+
+### 展示gif
+
+![ZHAutoCalculateCellHeight.gif](http://upload-images.jianshu.io/upload_images/2926059-767f4101b3d0806f.gif?imageMogr2/auto-orient/strip)
+
 ##先看原函数注释
 ``` objective-c
 /* The size fitting most closely to targetSize in which the receiver's subtree can be laid out while optimally satisfying the constraints. If you want the smallest possible size, pass UILayoutFittingCompressedSize; for the largest possible size, pass UILayoutFittingExpandedSize.

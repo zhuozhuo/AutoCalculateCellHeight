@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9E8FFFA01D8170670015C23C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8FFF9F1D8170670015C23C /* main.m */; };
+		9E8FFFA31D8170670015C23C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8FFFA21D8170670015C23C /* AppDelegate.m */; };
+		9E8FFFA91D8170670015C23C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E8FFFA71D8170670015C23C /* Main.storyboard */; };
+		9E8FFFAB1D8170670015C23C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E8FFFAA1D8170670015C23C /* Assets.xcassets */; };
+		9E8FFFAE1D8170670015C23C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E8FFFAC1D8170670015C23C /* LaunchScreen.storyboard */; };
+		9E8FFFB91D8170670015C23C /* AutoCalculateCellHeightTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8FFFB81D8170670015C23C /* AutoCalculateCellHeightTests.m */; };
+		9E8FFFC41D8170670015C23C /* AutoCalculateCellHeightUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8FFFC31D8170670015C23C /* AutoCalculateCellHeightUITests.m */; };
+		9E8FFFEB1D8170E80015C23C /* ZHCustomLayoutTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8FFFD31D8170E80015C23C /* ZHCustomLayoutTableViewController.m */; };
+		9E8FFFEC1D8170E80015C23C /* ZHHomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8FFFD51D8170E80015C23C /* ZHHomeTableViewController.m */; };
+		9E8FFFEF1D8170E80015C23C /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 9E8FFFDB1D8170E80015C23C /* data.json */; };
+		9E8FFFF01D8170E80015C23C /* ZHPropertyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8FFFDE1D8170E80015C23C /* ZHPropertyManager.m */; };
+		9E8FFFF11D8170E80015C23C /* ZHCalculateHeightModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8FFFE11D8170E80015C23C /* ZHCalculateHeightModel.m */; };
+		9E8FFFF31D8170E80015C23C /* ZHCalculateTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8FFFE61D8170E80015C23C /* ZHCalculateTableViewCell.m */; };
+		9E8FFFF41D8170E80015C23C /* ZHCalculateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E8FFFE71D8170E80015C23C /* ZHCalculateTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9E8FFFB51D8170670015C23C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E8FFF931D8170670015C23C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E8FFF9A1D8170670015C23C;
+			remoteInfo = AutoCalculateCellHeight;
+		};
+		9E8FFFC01D8170670015C23C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E8FFF931D8170670015C23C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E8FFF9A1D8170670015C23C;
+			remoteInfo = AutoCalculateCellHeight;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9E8FFF9B1D8170670015C23C /* AutoCalculateCellHeight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoCalculateCellHeight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E8FFF9F1D8170670015C23C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9E8FFFA11D8170670015C23C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9E8FFFA21D8170670015C23C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9E8FFFA81D8170670015C23C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9E8FFFAA1D8170670015C23C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9E8FFFAD1D8170670015C23C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9E8FFFAF1D8170670015C23C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E8FFFB41D8170670015C23C /* AutoCalculateCellHeightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoCalculateCellHeightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E8FFFB81D8170670015C23C /* AutoCalculateCellHeightTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoCalculateCellHeightTests.m; sourceTree = "<group>"; };
+		9E8FFFBA1D8170670015C23C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E8FFFBF1D8170670015C23C /* AutoCalculateCellHeightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoCalculateCellHeightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E8FFFC31D8170670015C23C /* AutoCalculateCellHeightUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoCalculateCellHeightUITests.m; sourceTree = "<group>"; };
+		9E8FFFC51D8170670015C23C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E8FFFD21D8170E80015C23C /* ZHCustomLayoutTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHCustomLayoutTableViewController.h; sourceTree = "<group>"; };
+		9E8FFFD31D8170E80015C23C /* ZHCustomLayoutTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHCustomLayoutTableViewController.m; sourceTree = "<group>"; };
+		9E8FFFD41D8170E80015C23C /* ZHHomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHHomeTableViewController.h; sourceTree = "<group>"; };
+		9E8FFFD51D8170E80015C23C /* ZHHomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHHomeTableViewController.m; sourceTree = "<group>"; };
+		9E8FFFDB1D8170E80015C23C /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		9E8FFFDD1D8170E80015C23C /* ZHPropertyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHPropertyManager.h; sourceTree = "<group>"; };
+		9E8FFFDE1D8170E80015C23C /* ZHPropertyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHPropertyManager.m; sourceTree = "<group>"; };
+		9E8FFFE01D8170E80015C23C /* ZHCalculateHeightModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHCalculateHeightModel.h; sourceTree = "<group>"; };
+		9E8FFFE11D8170E80015C23C /* ZHCalculateHeightModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHCalculateHeightModel.m; sourceTree = "<group>"; };
+		9E8FFFE51D8170E80015C23C /* ZHCalculateTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHCalculateTableViewCell.h; sourceTree = "<group>"; };
+		9E8FFFE61D8170E80015C23C /* ZHCalculateTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHCalculateTableViewCell.m; sourceTree = "<group>"; };
+		9E8FFFE71D8170E80015C23C /* ZHCalculateTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZHCalculateTableViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9E8FFF981D8170670015C23C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E8FFFB11D8170670015C23C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E8FFFBC1D8170670015C23C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9E8FFF921D8170670015C23C = {
+			isa = PBXGroup;
+			children = (
+				9E8FFF9D1D8170670015C23C /* AutoCalculateCellHeight */,
+				9E8FFFB71D8170670015C23C /* AutoCalculateCellHeightTests */,
+				9E8FFFC21D8170670015C23C /* AutoCalculateCellHeightUITests */,
+				9E8FFF9C1D8170670015C23C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9E8FFF9C1D8170670015C23C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9E8FFF9B1D8170670015C23C /* AutoCalculateCellHeight.app */,
+				9E8FFFB41D8170670015C23C /* AutoCalculateCellHeightTests.xctest */,
+				9E8FFFBF1D8170670015C23C /* AutoCalculateCellHeightUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9E8FFF9D1D8170670015C23C /* AutoCalculateCellHeight */ = {
+			isa = PBXGroup;
+			children = (
+				9E8FFFD11D8170E80015C23C /* Controllers */,
+				9E8FFFDA1D8170E80015C23C /* Data */,
+				9E8FFFDC1D8170E80015C23C /* Manager */,
+				9E8FFFDF1D8170E80015C23C /* Models */,
+				9E8FFFE41D8170E80015C23C /* Views */,
+				9E8FFFA11D8170670015C23C /* AppDelegate.h */,
+				9E8FFFA21D8170670015C23C /* AppDelegate.m */,
+				9E8FFFA71D8170670015C23C /* Main.storyboard */,
+				9E8FFFAA1D8170670015C23C /* Assets.xcassets */,
+				9E8FFFAC1D8170670015C23C /* LaunchScreen.storyboard */,
+				9E8FFFAF1D8170670015C23C /* Info.plist */,
+				9E8FFF9E1D8170670015C23C /* Supporting Files */,
+			);
+			path = AutoCalculateCellHeight;
+			sourceTree = "<group>";
+		};
+		9E8FFF9E1D8170670015C23C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9E8FFF9F1D8170670015C23C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9E8FFFB71D8170670015C23C /* AutoCalculateCellHeightTests */ = {
+			isa = PBXGroup;
+			children = (
+				9E8FFFB81D8170670015C23C /* AutoCalculateCellHeightTests.m */,
+				9E8FFFBA1D8170670015C23C /* Info.plist */,
+			);
+			path = AutoCalculateCellHeightTests;
+			sourceTree = "<group>";
+		};
+		9E8FFFC21D8170670015C23C /* AutoCalculateCellHeightUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9E8FFFC31D8170670015C23C /* AutoCalculateCellHeightUITests.m */,
+				9E8FFFC51D8170670015C23C /* Info.plist */,
+			);
+			path = AutoCalculateCellHeightUITests;
+			sourceTree = "<group>";
+		};
+		9E8FFFD11D8170E80015C23C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9E8FFFD41D8170E80015C23C /* ZHHomeTableViewController.h */,
+				9E8FFFD51D8170E80015C23C /* ZHHomeTableViewController.m */,
+				9E8FFFD21D8170E80015C23C /* ZHCustomLayoutTableViewController.h */,
+				9E8FFFD31D8170E80015C23C /* ZHCustomLayoutTableViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9E8FFFDA1D8170E80015C23C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				9E8FFFDB1D8170E80015C23C /* data.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		9E8FFFDC1D8170E80015C23C /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				9E8FFFDD1D8170E80015C23C /* ZHPropertyManager.h */,
+				9E8FFFDE1D8170E80015C23C /* ZHPropertyManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		9E8FFFDF1D8170E80015C23C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9E8FFFE01D8170E80015C23C /* ZHCalculateHeightModel.h */,
+				9E8FFFE11D8170E80015C23C /* ZHCalculateHeightModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9E8FFFE41D8170E80015C23C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9E8FFFE51D8170E80015C23C /* ZHCalculateTableViewCell.h */,
+				9E8FFFE61D8170E80015C23C /* ZHCalculateTableViewCell.m */,
+				9E8FFFE71D8170E80015C23C /* ZHCalculateTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9E8FFF9A1D8170670015C23C /* AutoCalculateCellHeight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E8FFFC81D8170670015C23C /* Build configuration list for PBXNativeTarget "AutoCalculateCellHeight" */;
+			buildPhases = (
+				9E8FFF971D8170670015C23C /* Sources */,
+				9E8FFF981D8170670015C23C /* Frameworks */,
+				9E8FFF991D8170670015C23C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AutoCalculateCellHeight;
+			productName = AutoCalculateCellHeight;
+			productReference = 9E8FFF9B1D8170670015C23C /* AutoCalculateCellHeight.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9E8FFFB31D8170670015C23C /* AutoCalculateCellHeightTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E8FFFCB1D8170670015C23C /* Build configuration list for PBXNativeTarget "AutoCalculateCellHeightTests" */;
+			buildPhases = (
+				9E8FFFB01D8170670015C23C /* Sources */,
+				9E8FFFB11D8170670015C23C /* Frameworks */,
+				9E8FFFB21D8170670015C23C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9E8FFFB61D8170670015C23C /* PBXTargetDependency */,
+			);
+			name = AutoCalculateCellHeightTests;
+			productName = AutoCalculateCellHeightTests;
+			productReference = 9E8FFFB41D8170670015C23C /* AutoCalculateCellHeightTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9E8FFFBE1D8170670015C23C /* AutoCalculateCellHeightUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E8FFFCE1D8170670015C23C /* Build configuration list for PBXNativeTarget "AutoCalculateCellHeightUITests" */;
+			buildPhases = (
+				9E8FFFBB1D8170670015C23C /* Sources */,
+				9E8FFFBC1D8170670015C23C /* Frameworks */,
+				9E8FFFBD1D8170670015C23C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9E8FFFC11D8170670015C23C /* PBXTargetDependency */,
+			);
+			name = AutoCalculateCellHeightUITests;
+			productName = AutoCalculateCellHeightUITests;
+			productReference = 9E8FFFBF1D8170670015C23C /* AutoCalculateCellHeightUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9E8FFF931D8170670015C23C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = zhuo;
+				TargetAttributes = {
+					9E8FFF9A1D8170670015C23C = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					9E8FFFB31D8170670015C23C = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 9E8FFF9A1D8170670015C23C;
+					};
+					9E8FFFBE1D8170670015C23C = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 9E8FFF9A1D8170670015C23C;
+					};
+				};
+			};
+			buildConfigurationList = 9E8FFF961D8170670015C23C /* Build configuration list for PBXProject "AutoCalculateCellHeight" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9E8FFF921D8170670015C23C;
+			productRefGroup = 9E8FFF9C1D8170670015C23C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9E8FFF9A1D8170670015C23C /* AutoCalculateCellHeight */,
+				9E8FFFB31D8170670015C23C /* AutoCalculateCellHeightTests */,
+				9E8FFFBE1D8170670015C23C /* AutoCalculateCellHeightUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9E8FFF991D8170670015C23C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E8FFFAE1D8170670015C23C /* LaunchScreen.storyboard in Resources */,
+				9E8FFFF41D8170E80015C23C /* ZHCalculateTableViewCell.xib in Resources */,
+				9E8FFFAB1D8170670015C23C /* Assets.xcassets in Resources */,
+				9E8FFFA91D8170670015C23C /* Main.storyboard in Resources */,
+				9E8FFFEF1D8170E80015C23C /* data.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E8FFFB21D8170670015C23C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E8FFFBD1D8170670015C23C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9E8FFF971D8170670015C23C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E8FFFF01D8170E80015C23C /* ZHPropertyManager.m in Sources */,
+				9E8FFFEC1D8170E80015C23C /* ZHHomeTableViewController.m in Sources */,
+				9E8FFFEB1D8170E80015C23C /* ZHCustomLayoutTableViewController.m in Sources */,
+				9E8FFFA31D8170670015C23C /* AppDelegate.m in Sources */,
+				9E8FFFF11D8170E80015C23C /* ZHCalculateHeightModel.m in Sources */,
+				9E8FFFA01D8170670015C23C /* main.m in Sources */,
+				9E8FFFF31D8170E80015C23C /* ZHCalculateTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E8FFFB01D8170670015C23C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E8FFFB91D8170670015C23C /* AutoCalculateCellHeightTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E8FFFBB1D8170670015C23C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E8FFFC41D8170670015C23C /* AutoCalculateCellHeightUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9E8FFFB61D8170670015C23C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9E8FFF9A1D8170670015C23C /* AutoCalculateCellHeight */;
+			targetProxy = 9E8FFFB51D8170670015C23C /* PBXContainerItemProxy */;
+		};
+		9E8FFFC11D8170670015C23C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9E8FFF9A1D8170670015C23C /* AutoCalculateCellHeight */;
+			targetProxy = 9E8FFFC01D8170670015C23C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9E8FFFA71D8170670015C23C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E8FFFA81D8170670015C23C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9E8FFFAC1D8170670015C23C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E8FFFAD1D8170670015C23C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9E8FFFC61D8170670015C23C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9E8FFFC71D8170670015C23C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9E8FFFC91D8170670015C23C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AutoCalculateCellHeight/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Imco.AutoCalculateCellHeight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9E8FFFCA1D8170670015C23C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AutoCalculateCellHeight/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Imco.AutoCalculateCellHeight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9E8FFFCC1D8170670015C23C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AutoCalculateCellHeightTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Imco.AutoCalculateCellHeightTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoCalculateCellHeight.app/AutoCalculateCellHeight";
+			};
+			name = Debug;
+		};
+		9E8FFFCD1D8170670015C23C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AutoCalculateCellHeightTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Imco.AutoCalculateCellHeightTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoCalculateCellHeight.app/AutoCalculateCellHeight";
+			};
+			name = Release;
+		};
+		9E8FFFCF1D8170670015C23C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AutoCalculateCellHeightUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Imco.AutoCalculateCellHeightUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AutoCalculateCellHeight;
+			};
+			name = Debug;
+		};
+		9E8FFFD01D8170670015C23C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AutoCalculateCellHeightUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Imco.AutoCalculateCellHeightUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AutoCalculateCellHeight;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9E8FFF961D8170670015C23C /* Build configuration list for PBXProject "AutoCalculateCellHeight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E8FFFC61D8170670015C23C /* Debug */,
+				9E8FFFC71D8170670015C23C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E8FFFC81D8170670015C23C /* Build configuration list for PBXNativeTarget "AutoCalculateCellHeight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E8FFFC91D8170670015C23C /* Debug */,
+				9E8FFFCA1D8170670015C23C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9E8FFFCB1D8170670015C23C /* Build configuration list for PBXNativeTarget "AutoCalculateCellHeightTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E8FFFCC1D8170670015C23C /* Debug */,
+				9E8FFFCD1D8170670015C23C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9E8FFFCE1D8170670015C23C /* Build configuration list for PBXNativeTarget "AutoCalculateCellHeightUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E8FFFCF1D8170670015C23C /* Debug */,
+				9E8FFFD01D8170670015C23C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9E8FFF931D8170670015C23C /* Project object */;
+}

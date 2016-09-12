@@ -15,9 +15,12 @@
 
 #import "ZHCustomLayoutTableViewController.h"
 #import "ZHCalculateTableViewCell.h"
+#import "ZHCellHeightCalculator.h"
 
 @interface ZHCustomLayoutTableViewController (){
     NSArray *dataArray;
+    ZHCellHeightCalculator *heightCalculator;
+    
 }
 
 @property (nonatomic, strong)  ZHCalculateTableViewCell *prototypeCell;
@@ -28,6 +31,7 @@
 #pragma mark - Life cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
+    heightCalculator = [[ZHCellHeightCalculator alloc]init];
     [self.tableView registerNib:[UINib nibWithNibName:@"ZHCalculateTableViewCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:CellIdentifier];
     self.tableView.estimatedRowHeight = 100;
     self.prototypeCell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier];
@@ -69,8 +73,15 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+   ZHCalculateHeightModel *model = model = [dataArray objectAtIndex:indexPath.row];
     
-
+    CGFloat height = [heightCalculator heightForCalculateheightModel:model];
+    if (height>0) {
+        NSLog(@"cache height");
+        return height;
+    }else{
+        NSLog(@"calculate height");
+    }
     ZHCalculateTableViewCell *cell = self.prototypeCell;
     cell.contentView.translatesAutoresizingMaskIntoConstraints = NO;
     [self configureCell:cell atIndexPath:indexPath];//必须先对Cell中的数据进行配置使动态计算时能够知道根据Cell内容计算出合适的高度
@@ -84,7 +95,9 @@
     [cell.contentView removeConstraint:widthFenceConstraint];
     /*-------------------------------End------------------------------------*/
     
-    return fittingHeight+2*1/[UIScreen mainScreen].scale;//必须加上上下分割线的高度
+    CGFloat cellHeight = fittingHeight+2*1/[UIScreen mainScreen].scale;//必须加上上下分割线的高度
+    [heightCalculator setHeight:cellHeight withCalculateheightModel:model];
+    return cellHeight;
 }
 
 

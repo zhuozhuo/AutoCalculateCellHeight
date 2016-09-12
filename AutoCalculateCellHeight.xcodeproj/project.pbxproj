@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FDEA8501D870557003D7D53 /* ZHCellHeightCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FDEA84F1D870557003D7D53 /* ZHCellHeightCalculator.m */; };
 		9E8FFFA01D8170670015C23C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8FFF9F1D8170670015C23C /* main.m */; };
 		9E8FFFA31D8170670015C23C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8FFFA21D8170670015C23C /* AppDelegate.m */; };
 		9E8FFFA91D8170670015C23C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E8FFFA71D8170670015C23C /* Main.storyboard */; };
@@ -41,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1FDEA84E1D870557003D7D53 /* ZHCellHeightCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHCellHeightCalculator.h; sourceTree = "<group>"; };
+		1FDEA84F1D870557003D7D53 /* ZHCellHeightCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHCellHeightCalculator.m; sourceTree = "<group>"; };
 		9E8FFF9B1D8170670015C23C /* AutoCalculateCellHeight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoCalculateCellHeight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E8FFF9F1D8170670015C23C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9E8FFFA11D8170670015C23C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -94,6 +97,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1FDEA84D1D87051A003D7D53 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				1FDEA84E1D870557003D7D53 /* ZHCellHeightCalculator.h */,
+				1FDEA84F1D870557003D7D53 /* ZHCellHeightCalculator.m */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
 		9E8FFF921D8170670015C23C = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +129,7 @@
 		9E8FFF9D1D8170670015C23C /* AutoCalculateCellHeight */ = {
 			isa = PBXGroup;
 			children = (
+				1FDEA84D1D87051A003D7D53 /* Layout */,
 				9E8FFFD11D8170E80015C23C /* Controllers */,
 				9E8FFFDA1D8170E80015C23C /* Data */,
 				9E8FFFDC1D8170E80015C23C /* Manager */,
@@ -338,6 +351,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FDEA8501D870557003D7D53 /* ZHCellHeightCalculator.m in Sources */,
 				9E8FFFF01D8170E80015C23C /* ZHPropertyManager.m in Sources */,
 				9E8FFFEC1D8170E80015C23C /* ZHHomeTableViewController.m in Sources */,
 				9E8FFFEB1D8170E80015C23C /* ZHCustomLayoutTableViewController.m in Sources */,
@@ -568,6 +582,7 @@
 				9E8FFFCA1D8170670015C23C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9E8FFFCB1D8170670015C23C /* Build configuration list for PBXNativeTarget "AutoCalculateCellHeightTests" */ = {
 			isa = XCConfigurationList;
@@ -576,6 +591,7 @@
 				9E8FFFCD1D8170670015C23C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9E8FFFCE1D8170670015C23C /* Build configuration list for PBXNativeTarget "AutoCalculateCellHeightUITests" */ = {
 			isa = XCConfigurationList;
@@ -584,6 +600,7 @@
 				9E8FFFD01D8170670015C23C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

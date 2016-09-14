@@ -65,7 +65,7 @@ Cell的模型名称我们暂定为:`ZHCalculateHeightModel`
 
 所带方法：
 
-```Ob
+```Objective-c
 @interface ZHCellHeightCalculator : NSObject
 
 //系统计算高度后缓存进cache

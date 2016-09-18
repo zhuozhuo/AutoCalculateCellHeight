@@ -65,7 +65,7 @@ Cell的模型名称我们暂定为:`ZHCalculateHeightModel`
 
 所带方法：
 
-```Ob
+```Objective-c
 @interface ZHCellHeightCalculator : NSObject
 
 //系统计算高度后缓存进cache
@@ -102,7 +102,7 @@ self.prototypeCell = [self.tableView dequeueReusableCellWithIdentifier:CellIdent
 * 动态计算高度+缓存
 
 ```objective-c
-  -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
    ZHCalculateHeightModel *model = model = [dataArray objectAtIndex:indexPath.row];
     
@@ -131,10 +131,10 @@ self.prototypeCell = [self.tableView dequeueReusableCellWithIdentifier:CellIdent
     return cellHeight;
 }
 
-
 ```
 
 ### ZHCalculateTableViewCell Model的Set函数重写为
+
 ```objective-c
 #pragma mark - Setters
 -(void)setModel:(ZHCalculateHeightModel *)model
@@ -149,8 +149,7 @@ self.prototypeCell = [self.tableView dequeueReusableCellWithIdentifier:CellIdent
 }
 ```
 
-### 扩展
-我们可以在计算高度后对其进行缓存,下次可以直接返回！
+
 
 ###总结
 * 在`-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath`一定不要用` ZHCalculateTableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];`来获取Cell。

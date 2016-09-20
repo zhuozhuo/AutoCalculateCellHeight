@@ -54,7 +54,7 @@
 -(void)setHeight:(CGFloat)height withCalculateheightModel:(ZHCalculateHeightModel *)model
 {
     NSAssert(model != nil, @"Cell Model can't  nil");
-    NSAssert(height > 0, @"cell height must great than 0");
+    NSAssert(height >= 0, @"cell height must greater than or equal to 0");
     
     [self.cache setObject:[NSNumber numberWithFloat:height] forKey:@(model.hash)];
 }

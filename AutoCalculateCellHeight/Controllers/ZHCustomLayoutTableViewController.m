@@ -74,7 +74,7 @@
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
    ZHCalculateHeightModel *model = model = [dataArray objectAtIndex:indexPath.row];
-    
+
     CGFloat height = [heightCalculator heightForCalculateheightModel:model];
     if (height>0) {
         NSLog(@"cache height");

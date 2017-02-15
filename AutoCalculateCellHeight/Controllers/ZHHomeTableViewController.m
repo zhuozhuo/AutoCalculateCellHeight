@@ -23,6 +23,7 @@
 #pragma mark - view life cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.tableView.tableFooterView = [UIView new];
   
     
     // Uncomment the following line to preserve selection between presentations.

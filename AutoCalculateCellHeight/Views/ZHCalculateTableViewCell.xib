@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -18,45 +22,45 @@
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mutable line Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="55D-ce-aXu">
                         <rect key="frame" x="22" y="8" width="275" height="21"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mutable line Content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E5e-tW-OpO">
                         <rect key="frame" x="22" y="37" width="275" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UserName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UaZ-Sc-tmr">
                         <rect key="frame" x="8" y="183" width="82" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GTe-x1-mWC">
                         <rect key="frame" x="274" y="183" width="38" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2bs-VR-tpg">
-                        <rect key="frame" x="77" y="66" width="165" height="96"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img1" translatesAutoresizingMaskIntoConstraints="NO" id="2bs-VR-tpg">
+                        <rect key="frame" x="128" y="63" width="64" height="64"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </imageView>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="2bs-VR-tpg" firstAttribute="centerX" secondItem="6GZ-hN-mWl" secondAttribute="centerX" id="3bm-Gn-aix"/>
+                    <constraint firstItem="2bs-VR-tpg" firstAttribute="top" secondItem="E5e-tW-OpO" secondAttribute="bottom" constant="5" id="AbD-Vw-8Mo"/>
                     <constraint firstItem="55D-ce-aXu" firstAttribute="leading" secondItem="E5e-tW-OpO" secondAttribute="leading" id="F2I-eX-u2H"/>
                     <constraint firstItem="55D-ce-aXu" firstAttribute="top" secondItem="6GZ-hN-mWl" secondAttribute="topMargin" id="Hv3-mZ-Lhn"/>
-                    <constraint firstItem="UaZ-Sc-tmr" firstAttribute="top" secondItem="2bs-VR-tpg" secondAttribute="bottom" constant="21" id="IEh-75-fvj"/>
                     <constraint firstItem="E5e-tW-OpO" firstAttribute="top" secondItem="55D-ce-aXu" secondAttribute="bottom" constant="8" symbolic="YES" id="JtN-jf-X69"/>
                     <constraint firstItem="55D-ce-aXu" firstAttribute="trailing" secondItem="E5e-tW-OpO" secondAttribute="trailing" id="MCN-i3-Ym6"/>
                     <constraint firstItem="UaZ-Sc-tmr" firstAttribute="leading" secondItem="6GZ-hN-mWl" secondAttribute="leadingMargin" id="Veh-2P-PwY"/>
                     <constraint firstItem="GTe-x1-mWC" firstAttribute="trailing" secondItem="6GZ-hN-mWl" secondAttribute="trailingMargin" id="WCJ-8l-79g"/>
-                    <constraint firstItem="2bs-VR-tpg" firstAttribute="leading" secondItem="6GZ-hN-mWl" secondAttribute="leadingMargin" constant="69" id="dBp-PW-Guz"/>
                     <constraint firstItem="55D-ce-aXu" firstAttribute="leading" secondItem="6GZ-hN-mWl" secondAttribute="leadingMargin" constant="14" id="kls-S1-Cen"/>
                     <constraint firstItem="55D-ce-aXu" firstAttribute="centerX" secondItem="6GZ-hN-mWl" secondAttribute="centerX" id="l6t-QL-N3x"/>
-                    <constraint firstItem="E5e-tW-OpO" firstAttribute="centerX" secondItem="2bs-VR-tpg" secondAttribute="centerX" id="oBq-nK-BAn"/>
+                    <constraint firstItem="UaZ-Sc-tmr" firstAttribute="top" relation="greaterThanOrEqual" secondItem="2bs-VR-tpg" secondAttribute="bottom" constant="5" id="pFL-SC-aa2"/>
                     <constraint firstItem="UaZ-Sc-tmr" firstAttribute="bottom" secondItem="6GZ-hN-mWl" secondAttribute="bottomMargin" id="qnS-An-s2S"/>
-                    <constraint firstItem="2bs-VR-tpg" firstAttribute="top" secondItem="E5e-tW-OpO" secondAttribute="bottom" constant="8" symbolic="YES" id="s5p-ph-Lep"/>
                     <constraint firstItem="UaZ-Sc-tmr" firstAttribute="baseline" secondItem="GTe-x1-mWC" secondAttribute="baseline" id="xQq-tv-Gm6"/>
                 </constraints>
             </tableViewCellContentView>
@@ -70,4 +74,7 @@
             <point key="canvasLocation" x="275" y="478.5"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="img1" width="64" height="64"/>
+    </resources>
 </document>

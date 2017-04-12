@@ -12,37 +12,37 @@
 
 #import "ZHPropertyManager.h"
 
+
 @implementation ZHPropertyManager
-+(instancetype)shareZHPropertyManager
++ (instancetype)shareZHPropertyManager
 {
     static ZHPropertyManager *propertyManager = nil;
     static dispatch_once_t *oncePredicate;
     dispatch_once(oncePredicate, ^{
-        propertyManager = [[ZHPropertyManager alloc]init];
+        propertyManager = [[ZHPropertyManager alloc] init];
     });
     return propertyManager;
 }
 
--(instancetype)init
+- (instancetype)init
 {
     self = [super init];
     if (self) {
-        
     }
     return self;
 }
 
--(UIFont *)getTitleFont
+- (UIFont *)getTitleFont
 {
     return [UIFont boldSystemFontOfSize:18.0];
 }
 
--(UIFont *)getContentFont
+- (UIFont *)getContentFont
 {
     return [UIFont systemFontOfSize:14.0];
 }
 
--(UIFont *)getTimeFont
+- (UIFont *)getTimeFont
 {
     return [UIFont systemFontOfSize:13.0];
 }

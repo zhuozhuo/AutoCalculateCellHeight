@@ -17,40 +17,42 @@
 
 @end
 
+
 @implementation ZHHomeTableViewController
 
 
 #pragma mark - view life cycle
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     self.tableView.tableFooterView = [UIView new];
-  
-    
+
+
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
-    
+
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
 
 #pragma mark TableView Delegate
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"indexPathRow:%ld",(long)indexPath.row);
+    NSLog(@"indexPathRow:%ld", (long)indexPath.row);
     switch (indexPath.row) {
-        case 0:{
-            ZHCustomLayoutTableViewController *customeVC = [[ZHCustomLayoutTableViewController alloc]init];
+        case 0: {
+            ZHCustomLayoutTableViewController *customeVC = [[ZHCustomLayoutTableViewController alloc] init];
             [self.navigationController pushViewController:customeVC animated:YES];
-        }
-        break;
+        } break;
         default:
-        break;
+            break;
     }
 }
 

@@ -13,12 +13,12 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface ZHPropertyManager : NSObject
-+(instancetype)shareZHPropertyManager;
--(UIFont *)getTitleFont;
--(UIFont *)getContentFont;
--(UIFont *)getTimeFont;
 
+@interface ZHPropertyManager : NSObject
++ (instancetype)shareZHPropertyManager;
+- (UIFont *)getTitleFont;
+- (UIFont *)getContentFont;
+- (UIFont *)getTimeFont;
 
 
 @end

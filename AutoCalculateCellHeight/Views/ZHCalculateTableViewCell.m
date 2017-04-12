@@ -12,15 +12,17 @@
 
 #import "ZHCalculateTableViewCell.h"
 
+
 @implementation ZHCalculateTableViewCell
 
-- (void)awakeFromNib {
+- (void)awakeFromNib
+{
     [super awakeFromNib];
     // Initialization code
 }
 
 #pragma mark - Setters
--(void)setModel:(ZHCalculateHeightModel *)model
+- (void)setModel:(ZHCalculateHeightModel *)model
 {
     _model = model;
     self.TitleLabel.text = model.title;
@@ -28,11 +30,10 @@
     self.showImgView.image = model.imageName.length > 0 ? [UIImage imageNamed:model.imageName] : nil;
     self.UseNameLabel.text = model.username;
     self.TimeLabel.text = model.time;
-    
-
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated
+{
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state

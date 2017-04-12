@@ -14,7 +14,7 @@
 
 
 @implementation ZHCalculateHeightModel
--(instancetype)initWithDictionary:(NSDictionary *)dictionary 
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary
 {
     self = [super init];
     if (self) {
@@ -23,7 +23,6 @@
         _username = dictionary[@"username"];
         _time = dictionary[@"time"];
         _imageName = dictionary[@"imageName"];
-        
     }
     return self;
 }

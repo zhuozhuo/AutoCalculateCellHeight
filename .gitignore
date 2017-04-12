@@ -30,3 +30,4 @@ sendmail.log
 sendmail.sh
 SendmailViaSMTP.py
 
+.clang-format
